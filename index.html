@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST Method Test Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="email"] { width: 300px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <h2>POST Data Submission Test</h2>
+    <p>The form below sends data to the server's `/submit_data` path using the **POST** method. </p>
+
+    <form action="/submit_data" method="POST">
+        
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <button type="submit">Submit Data (POST)</button>
+        
+    </form>
+    <hr>
+
+    <h3>Code Explanation</h3>
+    <ul>
+        <li>**action="/submit_data"**: Specifies the server path (URL) where the form data will be sent.</li>
+        <li>**method="POST"**: Specifies that the data should be sent using the HTTP **POST** method.</li>
+        <li>**name="..."**: The **variable name** used when the input data is included in the **HTTP Request Body** (e.g., `username=value&email=value`).</li>
+    </ul>
+
+</body>
+</html>
