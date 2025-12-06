@@ -15,8 +15,8 @@ sudo apt install -y \
     build-essential cmake autoconf libtool \
     libpcap-dev libnet1-dev libpcre3-dev libpcre2-dev \
     zlib1g-dev libssl-dev pkg-config \
-    luajit libluajit-5.1-dev hwloc \
-    libdnet-dev libdumbnet-dev bison flex liblzma-dev
+    luajit libluajit-5.1-dev hwloc libhwloc-dev \
+    libdnet-dev libdumbnet-dev bison flex liblzma-dev 
 
 echo "### 1. Package installation complete."
 echo "-------------------------------------------------------"
@@ -86,5 +86,6 @@ sudo ldconfig
 # Check Snort version (verify successful installation)
 echo "✅ Snort 3.0 installation is complete."
 snort -V
+
 
 echo "### All installation steps completed successfully."
