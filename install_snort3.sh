@@ -16,7 +16,7 @@ sudo apt install -y \
     libpcap-dev libnet1-dev libpcre3-dev libpcre2-dev \
     zlib1g-dev libssl-dev pkg-config \
     luajit libluajit-5.1-dev hwloc libhwloc-dev \
-    libdumbnet-dev bison flex liblzma-dev 
+    libdumbnet-dev bison flex liblzma-dev libdaq-dev
 
 echo "### 1. Package installation complete."
 echo "-------------------------------------------------------"
@@ -89,4 +89,5 @@ snort -V
 
 
 echo "### All installation steps completed successfully."
+
 
